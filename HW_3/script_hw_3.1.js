@@ -113,7 +113,7 @@ let products = [
         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
     },
 ];
-document.write(`<br>  <h2 id="number_task">TASK 3.5</h2>`)
+document.write(`<br>  <h2 id="number_task">TASK 3.6</h2>`)
 for (let k = 0; k < products.length; k++) {
     document.write(`<div class="product-card">`)
     document.write(`<h3>${products[k].title} .Price - ${products[k].price} </h3> `)
@@ -123,7 +123,7 @@ for (let k = 0; k < products.length; k++) {
 // -----------------------------------------------
 
 
-//     3.6  - є масив
+//     3.7  - є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
 //     {name: 'petya', age: 30, status: true},
@@ -155,7 +155,7 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-document.write(`<br>  <h2 id="number_task">TASK 3.6</h2>`)
+document.write(`<br>  <h2 id="number_task">TASK 3.7</h2>`)
 
 document.write(`<h3 >user status true:</h3>`)
 for (let k = 0; k < users.length; k++) {
