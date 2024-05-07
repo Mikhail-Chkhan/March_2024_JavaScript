@@ -155,7 +155,7 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-document.write(`<br>  <h2 id="number_task">TASK 3.5</h2>`)
+document.write(`<br>  <h2 id="number_task">TASK 3.6</h2>`)
 
 document.write(`<h3 >user status true:</h3>`)
 for (let k = 0; k < users.length; k++) {
