@@ -174,8 +174,9 @@ while (index<users.length) {
 }
 
 document.write(`<h3 >user age more 30:</h3>`)
-for (const user in users) {
-    if (users[user].age > 30) {
-        document.write(`<p> name: ${users[user].name}   age: ${users[user].age} </p>`)
+for (const user of users) {
+    if (user.age > 30) {
+        // document.write(`<p> name: ${users[user].name}   age: ${users[user].age} </p>`)
+        document.write(`<p> name: ${user.name}   age: ${user.age} </p>`)
     }
 }
