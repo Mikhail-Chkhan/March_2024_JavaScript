@@ -161,13 +161,22 @@ swap(mas___number, 7,1)
 
 // - 4.13 Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 //          Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
-let currencies = [
+let currencyRates = [
     { currency: 'USD', value: 40 },
+    { currency: 'UAH', value: 1 },
     { currency: 'EUR', value: 42 },
     { currency: 'GBP', value: 50 },
-    { currency: 'JPY', value: 1000 },
-    { currency: 'AUD', value: 20 }
+    { currency: 'JPY', value: 0.24 },
+    { currency: 'AUD', value: 20.1 }
 ];
+//debugger
 function exchange(sumUAH,currencyValues,exchangeCurrency) {
-    let result = sumUAH
+    let rate = 0
+    for (const currencyValue of currencyValues) {
+        if (currencyValue.currency === exchangeCurrency) {
+            rate = currencyValue.value
+        }
+    }
+    console.log ( sumUAH / rate )
 }
+exchange(10000, currencyRates, 'EUR')
