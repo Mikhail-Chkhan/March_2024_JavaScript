@@ -151,7 +151,7 @@ let casino_cards = [
     {'value': 'king', 'suite': 'clubs'},
     {'value': 'joker', 'suite': 'clubs'}
 ]
-let cards_parsing = casino_cards.reduce((acc, item, index, arr) =>{
+let cards_parsing = casino_cards.reduce((acc, item) =>{
 
     // const suites_card = ['spades','diamonds', 'hearts', 'clubs']
     if (item.suite === 'spade') {
@@ -243,14 +243,14 @@ let coursesArray = [
 
 
 // --написати пошук всіх об'єктів, в який в modules є sass
-let sass_mass = coursesArray.filter((value,index) => {
+let sass_mass = coursesArray.filter((value) => {
     return value.modules.some(item => {return item === 'sass'})
     })
 console.log(sass_mass)
 /// -----------------------------------------------
 
 // --написати пошук всіх об'єктів, в який в modules є docker
-let docker_mass = coursesArray.filter((value,index) => {
+let docker_mass = coursesArray.filter((value) => {
     return value.modules.some(item => {return item === 'docker'})
 })
 console.log(docker_mass)
