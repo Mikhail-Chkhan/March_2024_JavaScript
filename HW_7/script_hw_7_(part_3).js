@@ -73,7 +73,7 @@ cards.forEach((element) => {
 })
 console.log(mas)
 
-cards.forEach_new((element, sdfg, asdg) => {
+cards.forEach_new((element) => {
     mas1.push(element)
 })
 console.log(mas1)
