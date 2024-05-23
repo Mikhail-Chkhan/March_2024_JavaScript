@@ -1,0 +1,29 @@
+.div_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.div_box>div {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrap {
+    background-color: aqua;
+
+}
+.collapse {
+    background-color: red;
+}
+.alpha {
+    background-color: cornflowerblue;
+}
+.beta {
+    background-color: darkorange;
+}
