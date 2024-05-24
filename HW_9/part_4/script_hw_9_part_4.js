@@ -102,7 +102,7 @@ let div_create = (item, div_box, name_key) => {
     }
 }
 let course = (courses, position) => {
-    courses.forEach((course, index, arr) => {
+    courses.forEach((course) => {
         let div_card = document.createElement('div')
         let div_duration = document.createElement('div')
         div_card.classList.add('course')
