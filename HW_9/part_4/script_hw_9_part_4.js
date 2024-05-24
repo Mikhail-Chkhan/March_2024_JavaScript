@@ -79,6 +79,8 @@ let coursesArray = [
 
 let div_create = (item, div_box, name_key) => {
     let div = document.createElement('div')
+    div.classList.add(name_key)
+    let name = name_key.replaceAll('_', ' ')
 
     if (Array.isArray(item)) {
         let ul = document.createElement('ul')
@@ -87,27 +89,33 @@ let div_create = (item, div_box, name_key) => {
             li.innerText = value
             ul.appendChild(li)
         })
-        div_box.appendChild(ul)
+        div.appendChild(ul)
+        div_box.appendChild(div)
 
     } else {
-        let index_name = item.toString()
-        div.id = `id_${index_name.replaceAll(' ', '_')}`
-        div.innerText = `${name_key}  ${item}`
+        let p = document.createElement('p')
+        let span = document.createElement('span')
+        span.innerText = ` ${item}`
+        p.innerText = `${name}:  `
+        div.append(p, span)
         div_box.appendChild(div)
     }
 }
 let course = (courses, position) => {
-    courses.forEach((course) => {
+    courses.forEach((course, index, arr) => {
         let div_card = document.createElement('div')
+        let div_duration = document.createElement('div')
         div_card.classList.add('course')
-        div_create(course.title, div_card, '')
-        div_create(course.monthDuration, div_card, 'month Duration')
-        div_create(course.hourDuration, div_card, 'hour Duration')
-        div_create(course.modules, div_card)
+        div_duration.classList.add('div_duration')
+
+        div_create(course.title, div_card, 'title')
+        div_create(course.monthDuration, div_duration, 'month_Duration')
+        div_create(course.hourDuration, div_duration, 'hour_Duration')
+        div_card.appendChild(div_duration)
+        div_create(course.modules, div_card, 'modules')
 
         position.appendChild(div_card)
-
-        let div_month = document.createElement('div')
+        // let div_month = document.createElement('div')
     })
 }
 let main = document.createElement('main')
