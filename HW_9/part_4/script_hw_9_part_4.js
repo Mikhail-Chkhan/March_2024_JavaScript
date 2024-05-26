@@ -76,7 +76,6 @@ let coursesArray = [
     }
 ];
 
-
 let div_create = (item, div_box, name_key) => {
     let div = document.createElement('div')
     div.classList.add(name_key)
@@ -101,6 +100,7 @@ let div_create = (item, div_box, name_key) => {
         div_box.appendChild(div)
     }
 }
+
 let course = (courses, position) => {
     courses.forEach((course) => {
         let div_card = document.createElement('div')
@@ -118,6 +118,8 @@ let course = (courses, position) => {
         // let div_month = document.createElement('div')
     })
 }
+
+
 let main = document.createElement('main')
 course(coursesArray, main)
 document.body.appendChild(main)
