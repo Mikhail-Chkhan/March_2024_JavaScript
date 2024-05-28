@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+#but {
+    width: 200px;
+    height: 200px;
+    background-color: #ff6767;
+    color: white;
+    border: 4px solid #a2ff00;
+    border-radius: 100px;
+    transition: all .5s ease;
+}
+#but:hover {
+    font-size: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#text {
+    width:600px;
+    height: 400px;
+    background-color: rgba(0, 143, 255, 0.86);
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1
+}
