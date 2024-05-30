@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-color: #afc9af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    width: 80vw;
+    height: 95vh;
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "name name name name rating rating"
+    "image image description description tags tags"
+    "instructions instructions instructions ingredients ingredients ingredients"
+    "other other other other other other";
+    grid-template-rows: 1fr 4fr 5fr 0.7fr;
+    grid-template-columns: 1fr 0.5fr 1.5fr 1fr 0.75fr 0.75fr;
+    grid-gap: 5px;
+    border: 2px solid green;
+    border-radius: 3px;
+
+}
+
+#name {
+    grid-area: name;
+}
+
+#rating {
+    grid-area: rating;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#image {
+    grid-area: image;
+    width: 250px;
+    height: 250px;
+}
+
+#description {
+    grid-area: description;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: 15px 10px 10px 25px
+}
+
+#tags {
+    grid-area: tags;
+}
+
+#instructions {
+    grid-area: instructions;
+}
+
+#ingredients {
+    grid-area: ingredients;
+}
+
+#other {
+    grid-area: other;
+}
+
+#name, #rating, #image, #tags, #instructions, #ingredients, #other {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: 5px
+}
+
+#img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+
+
+}
+
+.tag_box {
+    width: 80%;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #82d082;
+    color: white;
+}
+
