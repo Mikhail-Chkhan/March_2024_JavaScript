@@ -1,0 +1,64 @@
+.header {
+    width: 400px;
+    height: 25px;
+    font-size: 23px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    width: 400px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.id {
+    width: 80px;
+    height: 25px;
+    border: 1px solid grey;
+
+}
+.name {
+    width: 320px;
+    height: 25px;
+    border: 1px solid grey;
+
+}
+/*-----------------------------------------------*/
+.user_detail {
+    display: grid;
+    grid-template-areas:
+    "name name name"
+    "contact address work";
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+#id_name {
+    grid-area: name;
+    border-radius: 3px;
+    background-color: #aef6f1;
+    display: flex;
+    flex-direction: row;
+    font-style: unset;
+    font-size: 30px;
+}
+#id_contact {
+    grid-area: contact;
+    border-radius: 3px;
+    background-color: #aef6f1;
+}
+#id_address {
+    grid-area: address;
+    border-radius: 3px;
+    background-color: #aef6f1;
+}
+#id_work {
+    grid-area: work;
+    border-radius: 3px;
+    background-color: #aef6f1;
+}
